@@ -3,8 +3,10 @@ package br.com.kakobotasso.cardapio;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
 
 public class Main extends Activity {
+	private Button btEntrarHome;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -17,4 +19,9 @@ public class Main extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    
+    public void associarElementos(){
+    	this.btEntrarHome = (Button) findViewById(R.id.btEntrarHome);
+    }
+
 }
